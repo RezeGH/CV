@@ -1,16 +1,21 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Youcef Afane - CV en ligne</title>
-    <link rel="stylesheet" href="/CV/style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Youcef Afane</h1>
-        <p>Ingénieur Informatique - Apprenti</p>
+        <div class="header-container">
+            <img src="photo.jpg" alt="Youcef Afane" class="profile-pic">
+            <div>
+                <h1>Youcef Afane</h1>
+                <p>Ingénieur Informatique - Apprenti</p>
+                <a href="Youcef_AFANE_CV.pdf" class="download-btn" download>Télécharger le CV PDF</a>
+            </div>
+        </div>
     </header>
 
     <nav>
@@ -24,61 +29,48 @@
     <main>
         <section id="profil">
             <h2>Profil</h2>
-            <p>Futur élève ingénieur en informatique à CESI Montpellier, je suis actuellement en deuxième année de BTS CIEL (Cybersécurité, Informatique et Réseaux) en alternance. Je suis passionné par les systèmes informatiques, la cybersécurité, l’optimisation des performances réseau et l'automatisation des processus. Fort de deux années d'expérience en entreprise, je suis à la recherche d’une alternance à partir de septembre 2025 pour m’investir dans des projets concrets, techniques et évolutifs au sein d’une équipe dynamique.</p>
+            <p>Futur élève ingénieur en informatique à CESI Montpellier, actuellement en deuxième année de BTS CIEL. Passionné par les systèmes informatiques et les réseaux, j’ai acquis de solides bases techniques grâce à deux années d'alternance. Je suis motivé, rigoureux et autonome, prêt à m'investir dans des projets à impact.</p>
         </section>
 
         <section id="experience">
             <h2>Expérience</h2>
             <ul>
-                <li>
-                <strong>Technicien Réseaux et Télécoms
-                </strong> – Corsaire Télécom (2024-2025)
-                <br>
-                    Mise en place, sécurisation et supervision d’infrastructures télécoms (routeurs, commutateurs, VoIP). Déploiement de solutions réseau dans des environnements multi-sites. Maintenance curative et préventive.
-                <li>
-                <strong>Technicien Réparation Informatique
-                </strong> – Guard Informatique (2023-2024)
-                <br>
-                    Dépannage hardware et software pour des clients professionnels. Réinstallation complète de systèmes, mise à jour de postes, interventions sur site. Support client de niveau 1 et 2.
-                </li>
+                <li><strong>Technicien Réseaux – Corsaire Télécom (2024-2025)</strong><br>Maintenance et sécurisation d’équipements réseaux (switch, routeur). Supervision d’infrastructure multi-sites.</li>
+                <li><strong>Technicien Réparation – Guard Informatique (2023-2024)</strong><br>Dépannage matériel/logiciel, reconfiguration de postes, interventions client sur site.</li>
             </ul>
         </section>
 
         <section id="competences">
             <h2>Compétences</h2>
             <ul>
-                <li>Langages : C, C++, Python, HTML/CSS, JavaScript</li>
-                <li>Cybersécurité : durcissement des postes, audits de vulnérabilités, scripts d'automatisation</li>
-                <li>Réseaux : routage, VLAN, supervision (Wireshark, GNS3)</li>
-                <li>Systèmes : Linux, Windows Server, virtualisation (VMWare, Hyper-V)</li>
-                <li>UI/UX : maquettes Figma, intégration responsive</li>
-                <li>Gestion de projet : méthode Agile, rédaction de documentations techniques, Trello, Git</li>
+                <li>Langages : C, C++, Python, HTML/CSS</li>
+                <li>Développement web & responsive (UI/UX)</li>
+                <li>Réseaux : routage, VLAN, supervision</li>
+                <li>Systèmes : Linux, Windows, virtualisation</li>
+                <li>Cybersécurité : bonnes pratiques, durcissement</li>
+                <li>Gestion de projet : Trello, Git, documentation</li>
             </ul>
         </section>
 
         <section id="formation">
             <h2>Formation</h2>
             <ul>
-                <li>
-            <strong>CESI Montpellier
-            </strong> – Cycle ingénieur informatique (2025 - 2028)
-                    <br>
-                    Formation axée sur le développement logiciel, la cybersécurité, l’intelligence artificielle et la gestion de projets techniques en entreprise.
-                </li>
-                <li>
-            <strong>UIMM Baillargues
-            </strong> – BTS CIEL (Cybersécurité, Informatique et Réseaux) (2023 - 2025)
-                    <br>
-                    Apprentissage en entreprise, modules réseau, architecture, cybersécurité, développement bas niveau, et télécoms.
-                </li>
+                <li><strong>CESI Montpellier</strong> – Ingénieur Informatique (2025-2028)</li>
+                <li><strong>UIMM Baillargues</strong> – BTS CIEL (2023-2025)</li>
             </ul>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Adresse : 152 rue Mion Saint Michel, 34070 Montpellier<br>
-            Téléphone : 06 59 66 92 34<br>
-            Email : youcefafane31@gmail.com</p>
+            <form action="https://formspree.io/f/xeqybvka" method="POST">
+                <label>Nom</label>
+                <input type="text" name="name" required>
+                <label>Email</label>
+                <input type="email" name="_replyto" required>
+                <label>Message</label>
+                <textarea name="message" rows="5" required></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
     </main>
 
